@@ -1,0 +1,193 @@
+@font-face {font-family: Raleway;
+src: url(Raleway.ttf);}
+
+html, body {height: 100%;
+width: 100%;
+font-family: Raleway;
+background: linear-gradient(whitesmoke, lightgray, silver, lightgrey);
+background-attachment: fixed;
+margin: 0 auto;
+scroll-behavior: smooth;
+padding: 0;}
+
+a {text-decoration: none;
+color: black;}
+
+h1 {margin-top: 40px;
+color: coral;
+font-size: 60px;
+margin-bottom: 0;}
+
+header {display: flex;
+margin: 0 auto;
+align-items: center;
+flex-direction: column;
+font-size: large;
+margin-bottom: 0;}
+
+.login {align-self: flex-end;
+margin-right: 50px;
+position: relative;
+bottom: 180px;
+margin-bottom: 0;
+text-align: center;}
+
+nav {justify-content: space-around;
+width: 70vw;
+display: flex;
+margin: 0 auto;
+transform: translateY(50px);
+font-size: 20px;}
+    
+nav > a {position: relative;
+width: 15%;
+text-align: center;
+color: black;
+text-decoration: none;
+padding: 5px 0px;} 
+    
+nav > a::after {position: absolute;
+content: "";
+height: .1em;
+top: 100%;
+background: coral;
+z-index: -1;
+left: 0;
+right: 0;
+transform: scaleX(0);
+transition: transform .5s linear;}
+      
+nav > a:hover::after {transition-timing-function: ease-out;  
+transform: scaleX(0.8);}
+
+.btt {position: fixed;
+right: 20px;
+bottom: 20px;
+opacity: 0.4;}
+
+.btt:hover {animation-name: btt;
+animation-duration: 1s;
+animation-fill-mode: forwards;}
+
+@keyframes btt {
+    0% {
+        opacity: 0.5;
+        bottom: 22px;
+    }
+    50% {
+        opacity: 0.7;
+        bottom: 24px;
+    }
+    100% {
+        opacity: 1;
+        color: coral;
+        bottom: 26px;
+    }
+}
+
+.ogloszenie {width: 50%;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 100px;
+align-items: center;
+box-shadow: 0 5px 20px -10px grey;
+line-height: 40px;}
+
+.image {max-height: 450px;
+width: auto;
+display: flex;
+justify-self: flex-start;}
+
+#contact {width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 60px;}
+
+#contact > h2 {margin: 0 auto;}
+
+form {width: 40%;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 10px 25px;
+box-sizing: border-box;
+margin-bottom: 5px;}
+
+input {width:100%;
+padding:10px;
+box-sizing:border-box;
+background: none;
+outline: none;
+border-width: 0px;
+border-bottom:grey 2px solid;
+color: black;
+font-family: Raleway;}
+    
+input:focus, textarea:focus {border-bottom: 2px solid black;
+transition: linear 1s;}
+
+textarea {max-width:100%;
+min-height: 200px;
+box-sizing:border-box;
+background: none;
+outline: none;
+border-width: 0px;
+border-bottom:grey 2px solid;
+color: black;
+font-family: Raleway;}
+
+button {width: 200px;
+height: 30px;
+color: black;
+background-color: rgba(0,0,0,0);
+border-width: 0px;
+border-bottom: grey 2px solid;
+font-family: Raleway;
+font-size: 15px;
+background: none;
+outline: none;
+margin: 0 auto;}
+        
+button:hover {border-bottom: black 2px solid;
+transition: linear 1s;}
+
+#titlecar {font-size: 25px;}
+
+.ask {color: coral;
+opacity: 1;}
+
+#about {width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+margin-top: 30px;}
+    
+h2 {margin: 0 auto;
+display: flex;
+justify-content: center;
+text-align: center;
+margin-top: 100px;
+font-size: x-large;}
+
+#about > div {margin: 0 auto;
+text-align: center;
+align-self: center;}
+
+#about > .abt {padding-right: 30px;
+font-size: larger;}
+
+footer {height: 100px;
+margin-bottom: 0px;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;}
+    
+.social-link {text-decoration: none;
+color: black;
+margin: 10px;}
